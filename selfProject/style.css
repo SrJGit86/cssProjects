@@ -1,0 +1,511 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+body {}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Netflix Font', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: #353434;
+    padding-bottom: 3px;
+}
+
+
+/* .container {
+    max-width: 1024px;
+    margin: auto;
+} */
+
+a {
+    text-decoration: none;
+}
+
+#img_back {
+    width: 100%;
+    height: 45rem;
+    transform: scale(1.25) translateY(-10%);
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: absolute;
+    padding: 0 150px;
+    height: 80px;
+    z-index: 2;
+}
+
+.logo img {
+    width: 180px;
+    height: 100px;
+}
+
+.menu {
+    align-items: center;
+    height: 100%;
+}
+
+.lang i {
+    padding: 3px;
+}
+
+.lang {
+    border: 0.5px solid rgb(235, 230, 230);
+    background: transparent;
+    color: white;
+    font-weight: 300;
+    border-radius: 3px;
+    margin: 20px 10px 20px 10px;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+
+.login {
+    border: none;
+    background-color: #E50914;
+    color: white;
+    font-weight: 300;
+    border-radius: 3px;
+    margin: 20px 10px 20px 10px;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+.back_img_shadow {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 8.8) 0, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 1.8) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 45rem;
+    background: rgb(0 0 0 / 40%);
+}
+
+.first_content_box {
+    position: absolute;
+    top: 38%;
+    bottom: 20%;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 20px 0 20px; */
+}
+
+.sub_content_1 span {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+.sub_content_1 p {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+.sub_content_2 {
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.sub_content_2 p {
+    font-size: 20px;
+    color: white
+}
+
+.sub_content_2 form {
+    padding-top: ;
+    padding: 15px 10px 0 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.email_label {
+    position: absolute;
+    z-index: 4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition-property: top, font-size, line-height;
+    transition-duration: 250ms;
+    pointer-events: none;
+    font-size: 1rem;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5rem;
+    left: 1rem;
+    right: 30rem;
+    top: 200px;
+}
+
+.email_label:active {
+    text-size-adjust: 10px;
+}
+
+#id {
+    width: 65%;
+    height: 53px;
+    /* background-color: black; */
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 5px;
+    background: rgba(22, 22, 22, 0.7);
+}
+
+.get_start_btn {
+    width: 30%;
+    height: 55px;
+    font-size: 23px;
+    font-weight: 500;
+    background-color: #E50914;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.next2_container {
+    background-color: #353434;
+    padding-bottom: 8px;
+}
+
+.next2_content {
+    background-color: black;
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem;
+}
+
+.next2_text span {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.next2_text p {
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.next2_img {
+    position: absolute;
+    top: 6rem;
+    left: 44rem;
+    z-index: 1;
+}
+
+.next2_img img {
+    width: 30rem;
+}
+
+.next2_img_vdo video {
+    padding: 0 20px 20px 10px;
+    width: 25rem;
+}
+
+.next2_img_vdo {
+    padding-right: 2rem;
+}
+
+.next3_container {
+    background-color: #353434;
+    padding-bottom: 8px;
+}
+
+.next3_content {
+    background-color: black;
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem;
+    height: 34rem;
+}
+
+.next3_img img {
+    width: 32rem;
+}
+
+.next3_img_abvdiv {
+    position: absolute;
+    display: flex;
+    /* padding: 10px 0; */
+    border: 2px solid #353434;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    top: 21rem;
+    left: 277px;
+    width: 20%;
+    height: 90px;
+    background-color: black;
+}
+
+.top_img img {
+    width: 60px;
+    height: 75px;
+    padding: 5px;
+}
+
+.top_img_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.stranger_things_book {
+    font-size: 15px;
+    /* padding-bottom: 5px; */
+    padding: 0 6px;
+}
+
+.downloading {
+    font-size: 12px;
+    color: blue;
+    padding: 0 6px;
+}
+
+.next3_text span {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.download_icon {
+    font-size: 25px;
+    padding: 0 5px;
+}
+
+.next3_text p {
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.next4_container {
+    background-color: #353434;
+    padding-bottom: 8px;
+}
+
+.next4_content {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem;
+    width: auto;
+}
+
+.next4_text span {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.next4_text p {
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.video_img {
+    position: relative;
+    right: 50px;
+    bottom: 25px;
+    width: 35%;
+}
+
+.next4_img {
+    position: absolute;
+    top: -46px;
+    right: -38px;
+    z-index: 1;
+}
+
+.next4_img img {
+    width: 30rem;
+}
+
+.next4_img_vdo video {
+    padding: 0 20px 15px 10px;
+    width: 20rem;
+}
+
+.next4_img_vdo {
+    padding-right: 2rem;
+}
+
+.next5_container {
+    background-color: #353434;
+    padding-bottom: 8px;
+}
+
+.next5_content {
+    background-color: black;
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem;
+    height: 34rem;
+}
+
+.next5_img img {
+    width: 36rem;
+}
+
+.next5_text span {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.next5_text p {
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.next6_container {
+    background-color: #353434;
+    padding-bottom: 8px;
+}
+
+.next6_content {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+    width: auto;
+}
+
+.head_6 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #2e2d2d;
+}
+
+.questions a {
+    color: white;
+    font-size: 25px;
+}
+
+.sub_content_6 {
+    padding-top: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.sub_content_6 form {
+    padding-top: ;
+    padding: 15px 10px 0 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.sub_content_6 p {
+    font-size: 20px;
+    color: white
+}
+
+.email_label6 {
+    position: absolute;
+    font-size: 1rem;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5rem;
+    left: 2rem;
+    top: 102px;
+}
+
+.help_num {
+    background-color: black;
+    padding: 5rem 10rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    font-weight: inherit;
+}
+
+#num {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: inherit;
+}
+
+.last_container_content {
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.options_bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.options_bar a {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-weight: inherit;
+    font-size: 13px;
+}
+
+.lang2 {
+    border: 0.5px solid rgb(235, 230, 230);
+    background: transparent;
+    color: white;
+    font-weight: 300;
+    border-radius: 3px;
+    margin: 20px 10px 20px 10px;
+    padding: 7px 10px;
+    font-size: 15px;
+    width: 120px;
+}
+
+.lang2 i {
+    padding: 3px;
+}
